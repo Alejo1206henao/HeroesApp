@@ -7,6 +7,13 @@ import { LayoutPageComponent } from './pages/layout-page/layout-page.component';
 import { ListPageComponent } from './pages/list-page/list-page.component';
 import { NewPageComponent } from './pages/new-page/new-page.component';
 import { SearchPageComponent } from './pages/search-page/search-page.component';
+import {MaterialModule} from "../material/material.module";
+import { ComponentsComponent } from './components/components.component';
+import { HeroImagePipe } from './pipes/hero-image.pipe';
+import {ReactiveFormsModule} from "@angular/forms";
+import {GifsComponent} from "../gifs/gifs/gifs.component";
+import {GifsCardComponent} from "../gifs/gifs-card/gifs-card.component";
+
 
 
 @NgModule({
@@ -15,11 +22,18 @@ import { SearchPageComponent } from './pages/search-page/search-page.component';
     LayoutPageComponent,
     ListPageComponent,
     NewPageComponent,
-    SearchPageComponent
+    SearchPageComponent,
+    ComponentsComponent,
+    GifsComponent,
+    GifsCardComponent,
+    //Pipes
+    HeroImagePipe,
   ],
   imports: [
     CommonModule,
-    HeroesRoutingModule
+    ReactiveFormsModule,
+    HeroesRoutingModule,
+    MaterialModule,
   ]
 })
 export class HeroesModule { }

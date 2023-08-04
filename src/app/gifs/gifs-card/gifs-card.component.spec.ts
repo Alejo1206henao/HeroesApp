@@ -1,16 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { LoginPageComponent } from './login-page.component';
+import { GifsCardComponent } from './gifs-card.component';
 
-describe('LoginPageComponent', () => {
-  let component: LoginPageComponent;
-  let fixture: ComponentFixture<LoginPageComponent>;
+describe('GifsCardComponent', () => {
+  let component: GifsCardComponent;
+  let fixture: ComponentFixture<GifsCardComponent>;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [LoginPageComponent]
+      declarations: [GifsCardComponent]
     });
-    fixture = TestBed.createComponent(LoginPageComponent);
+    fixture = TestBed.createComponent(GifsCardComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
