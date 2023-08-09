@@ -20,7 +20,9 @@
       <mat-icon>menu</mat-icon>
     </button>
     <span class="spacer"></span>
-    <button mat-button>
+    <span>{{user?.email}}</span>
+    <button mat-button
+            (click)="onLogout()">
       <mat-icon>logout</mat-icon>
       Cerrar sesión
     </button>

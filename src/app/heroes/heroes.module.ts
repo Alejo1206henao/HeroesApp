@@ -13,6 +13,9 @@ import { HeroImagePipe } from './pipes/hero-image.pipe';
 import {ReactiveFormsModule} from "@angular/forms";
 import {GifsComponent} from "../gifs/gifs/gifs.component";
 import {GifsCardComponent} from "../gifs/gifs-card/gifs-card.component";
+import { ConfirmDialogComponent } from './components/confirm-dialog/confirm-dialog.component';
+
+
 
 
 
@@ -28,12 +31,15 @@ import {GifsCardComponent} from "../gifs/gifs-card/gifs-card.component";
     GifsCardComponent,
     //Pipes
     HeroImagePipe,
+    ConfirmDialogComponent,
   ],
   imports: [
     CommonModule,
     ReactiveFormsModule,
     HeroesRoutingModule,
     MaterialModule,
+  ],
+  providers:[
   ]
 })
 export class HeroesModule { }

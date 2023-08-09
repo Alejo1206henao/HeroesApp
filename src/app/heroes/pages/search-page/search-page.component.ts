@@ -14,6 +14,7 @@ export class SearchPageComponent {
 
   public heroes: Hero[] = [];
   public selectedHero?: Hero;
+  // it's an input form reactive
   public searchInput = new FormControl('');
 
   constructor(private heroService: HeroresService) {

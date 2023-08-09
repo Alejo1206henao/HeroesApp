@@ -40,15 +40,11 @@ export class HeroePageComponent implements OnInit {
 
     }
 
+
     goBack(): void {
         this.router.navigateByUrl('/heroes/list')
     }
 
-    nameId():string{
-         this.hero?.id
-        return this.nameId();
-         console.log(this.nameId())
-    }
 
     viewGifs() {
         this.gifsService.getView().subscribe(
