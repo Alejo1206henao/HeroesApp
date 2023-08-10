@@ -1,4 +1,7 @@
 import {Component, Input, OnInit} from '@angular/core';
+import {GifsService} from "../services/gifs.service";
+import {Hero} from "../../heroes/interfaces/heroe.interfase";
+import {Gif} from "../interface/gifs";
 
 
 
@@ -8,12 +11,8 @@ import {Component, Input, OnInit} from '@angular/core';
   styleUrls: ['./gifs.component.css']
 })
 export class GifsComponent {
-
-
-  constructor(
-  ) {
+  constructor(private gifsService:GifsService) {
   }
-
 
 
 }

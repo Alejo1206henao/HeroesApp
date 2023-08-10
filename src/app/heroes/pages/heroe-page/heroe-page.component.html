@@ -36,10 +36,8 @@
       </button>
     </mat-card-content>
     <mat-card *ngFor="let gif of gifsList">
-      {{gif.title}}
       <img [src]="gif.images.downsized_medium.url">
     </mat-card>
-
   </mat-card>
 
 </div>
